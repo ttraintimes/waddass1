@@ -28,7 +28,7 @@
     margin-top: 6%;
   }
 }
-  .watch-page-content   {
+  .watch-page-content {
     color: #FFF;
     padding-top: 15%;
     padding-bottom: 0px;
@@ -37,10 +37,30 @@
     padding-top: 5%;
     padding-bottom: 15%;
   }
-  .watch-page-content h1   {
+  .watch-page-content h1 {
     margin: 0;
   }
-  .watch-page-content p    {
+  .aside-infro li{
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    list-style: none;
+    background: rgb(75, 75, 75);
+    text-decoration: none;
+    padding: 0.5rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 90%;
+    z-index: -1;
+  }
+  .aside-infro:hover li{
+    background: rgb(220, 220, 220);
+  }
+  .aside-infro a {
+    color: black;
+    display: block;
+  }
+  .watch-page-content p{
     font-size: 50px;
   }
   .watch-page a {
@@ -56,6 +76,8 @@
   }
   .feature-box {
     width: 70%;
+    padding-left: 13rem;
+    z-index: -2;
   }
   .video-content {
     width: 70%;
@@ -89,6 +111,20 @@
               <a href="#">GOOGLE</a>
             </div>
         </div>
+        <div class="aside-infro" >
+          <li>
+            <a href="#">
+              <h2>113 MINUTES</h2>
+            </a>
+          </li>
+        </div>
+        <div class="aside-infro" style="padding-top: 8rem; position: absolute;">
+          <li>
+            <a href="#">
+              <h2>2001</h2>
+            </a>
+          </li>
+        </div>
         <div class="video-content">
             <div class="feature-box">
               <video autoplay controls muted style="width: 90%;">
@@ -96,7 +132,7 @@
                     src="../assets/videos/official-trailer .mp4"
                     type="video/mp4"
                 />
-            </video>
+            </video> 
             <h4 style="padding-top: 0px; text-align: center;">The official trailer</h3>
             </div>
             <div class="feature-box">
