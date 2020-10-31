@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chicago-story</title>
+    <title>chicago-review</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
     h5{
         font-size: 0.8rem;
     }
-    .story-details{
+    .review-details{
         padding-top: 3%;
+    }
+    @media (width: 1280px) {
+        h5{
+        font-size: 1.2rem;
+    }
     }
 </style>
 <body>
-    <div class="story-content">
+    <div class="review-content">
         <div class="span-all">
             <h1 class="title" style="text-align: center;"><a href ="home.html">CHICAGO</a></h1>
         </div>
@@ -25,26 +30,27 @@
         </div>
         <div class="nav-menu">
             <ul>
-                <a href="intro2.html" target="_blank">INTRO</a>
+                <a href="intro.html" target="_blank">INTRO</a>
                 <a href="watch.html" target="_blank">CLIPS</a>
-                <a href="story.html" target="_blank" target="_blank" style="color: #fff;">STORY</a>
+                <a href="review.html" target="_blank">REVIEW</a>
               </ul>
           </div>
         <!-- 
         <div class="vl-line"></div>
         -->
     </div>
-    <div class="story-details">
+    <div class="review-details">
         <img src="../assets/images/chicago1.JPG" alt="chicago1" style="width: 25%; padding-left: 5%;">
         <img src="../assets/images/chicago2.JPG" alt="chicago2" style="width: 35%;">
-        <h5 style="width: 60%; margin-left: 15%; padding: 50px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when </h5>
+        <h5 style="width: 60%; margin-left: 15%; padding: 50px;">In effect it is filmed theatre, but this brings its own compensations: the more fake Chicago looks, the more real it seems to get. <br>--Barbara Ellen(Rotten Tomatoes)</h5>
         <hr style="width: 60%; margin-bottom: 1em;">
     </div>
-    <div class="story-details">
+    <div class="review-details">
         <img src="../assets/images/chicago3.jpg" alt="chicago3" style="width: 35%; padding-left: 5%;">
         <img src="../assets/images/chicago1.JPG" alt="chicago1" style="width: 25%;">
-        <h5 style="width: 60%; margin-left: 15%; padding: 50px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
-        <h5 style="width: 60%; margin-left: 15%; padding-left: 50px; padding-bottom: 30px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>        
+        <h5 style="width: 60%; margin-left: 15%; padding: 50px;">What makes this more than a film of a great stage show is the way that the action spills seamlessly from the stage sets into real life. Magic.<br>--James Christopher(Rotten Tomatoes)</h5>
+        <h5 style="width: 60%; margin-left: 15%; padding-left: 50px; padding-bottom: 30px;">
+            Whatever one's qualms about the material, its execution here is rock solid in ways that keep on impressing, right through to the niftiest end credits sequence in years.<br>--Tim Robey(Rotten Tomatoes)</h5>        
         <hr style="width: 60%; margin-bottom: 1em;">
      </div>
     <footer class="main-footer" :class="$mq">
