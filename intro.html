@@ -1,174 +1,195 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>chicago-intro</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-/* The grid container */
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-      'left middle middle middle middle middle' 
-      'left right right right aside aside' 
-      'left right right right aside aside' 
-      'main-footer main-footer main-footer main-footer main-footer main-footer';
-  /* grid-column-gap: 10px; - if you want gap between the columns */
-} 
 
-.left,
-.middle,
-.right,
-.aside {
-  padding: 0;
-}
-.middle{
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chicago-intro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'left middle middle middle middle middle'
+      'left right right right aside aside'
+      'left right right right aside aside'
+      'main-footer main-footer main-footer main-footer main-footer main-footer';
+  }
+
+  .left,
+  .middle,
+  .right,
+  .aside {
+    padding: 0;
+  }
+
+  .middle {
     padding-bottom: 0;
     margin-bottom: 0;
-}
-.left,
-.middle{
+  }
+
+  .left,
+  .middle {
     margin-left: 10%;
     margin-right: 15%;
-}
-.middle h5{
-  font-size: 0.8rem;
+  }
+
+  .middle h5 {
+    font-size: 0.8rem;
     width: 80%;
     padding-left: 10%;
-}
-.right{
+  }
+
+  .right {
     margin-left: 25%;
     padding-left: 2rem;
-}
-.aside{
+  }
+
+  .aside {
     margin-left: 25%;
     padding-left: 0.5rem;
-}
-img{
+  }
+
+  img {
     padding-left: 25%;
     width: 100%;
-}
-/* Style the left column */
-.left {
-  grid-area: left;
-}
-
-/* Style the middle column */
-.middle {
-  grid-area: middle;
-}
-
-/* Style the right column */
-.right {
-  grid-area: right;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 800px) {
-  .grid-container  {
-    grid-template-areas: 
-      'left left middle middle middle middle' 
-      'left left right right aside aside' 
-      'left left right right aside aside' 
-      'main-footer main-footer main-footer main-footer main-footer main-footer';
-  }
-  img{
-    padding-left: 15%;
-  }
-  .middle h5{
-    font-size: 0.5rem;
-  }
-  .right{
-    margin-left: 25%;
-  }
-  .aside{
-    margin-left: 25%;
   }
 
-  
-}
-@media (width: 1280px){
-  img{
-    padding-left: 10%;
-    width: 95%;
+  .left {
+    grid-area: left;
   }
-  h3{
-  font-size: 1.2rem;
+
+  .middle {
+    grid-area: middle;
   }
-  .middle h5{
-    font-size: 1.2rem;
-  }
-  .left,
-  .middle{
-    margin-left: 0;
-  }
-  .right , .aside {
-    margin-top: 0;
-    padding-top: 0;
-    
-  }
+
   .right {
-    margin-left: 2rem;
-    padding-left: 4rem;
+    grid-area: right;
   }
-  .aside {
-    margin-left: 2rem;
+
+  @media (max-width: 800px) {
+    .grid-container {
+      grid-template-areas:
+        'left left middle middle middle middle'
+        'left left right right aside aside'
+        'left left right right aside aside'
+        'main-footer main-footer main-footer main-footer main-footer main-footer';
+    }
+
+    img {
+      padding-left: 15%;
+    }
+
+    .middle h5 {
+      font-size: 0.5rem;
+    }
+
+    .right {
+      margin-left: 25%;
+    }
+
+    .aside {
+      margin-left: 25%;
+    }
+
 
   }
-  .right , .aside h5{
-    font-size: 1rem;
+
+  @media (width: 1280px) {
+    img {
+      padding-left: 10%;
+      width: 95%;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .middle h5 {
+      font-size: 1.2rem;
+    }
+
+    .left,
+    .middle {
+      margin-left: 0;
+    }
+
+    .right,
+    .aside {
+      margin-top: 0;
+      padding-top: 0;
+
+    }
+
+    .right {
+      margin-left: 2rem;
+      padding-left: 4rem;
+    }
+
+    .aside {
+      margin-left: 2rem;
+
+    }
+
+    .right,
+    .aside h5 {
+      font-size: 1rem;
+    }
   }
-}
 </style>
-<body>
-    <div class="intro-content">
-        <div class="span-all">
-          <h1 class="title" style="text-align: center;"><a href ="home.html">CHICAGO</a></h1>
-        </div>
-        <hr >
-        <div class="side-menu">
-          <a href="watch.html" style="top: 150px;">WATCH NOW</a>
-        </div>
-        <div class="side-menu2">
-          <a href="review.html" style="top: 190px;">LIKE IT?</a>
-      </div>
-          <div class="nav-menu">
-            <ul>
-                <a href="intro.html">INTRO</a>
-                <a href="watch.html">CLIPS</a>
-                <a href="review.html">REVIEW</a>
-            </ul>
-          </div>
 
-<div class="grid-container"> 
-  <div class="left"">
-    <div class="intro-image">
+<body>
+  <div class="intro-content">
+    <div class="span-all">
+      <h1 class="title" style="text-align: center;"><a href="home.html">CHICAGO</a></h1>
+    </div>
+    <hr>
+    <div class="side-menu">
+      <a href="watch.html" style="top: 150px;">WATCH NOW</a>
+    </div>
+    <div class="side-menu2">
+      <a href="review.html" style="top: 190px;">LIKE IT?</a>
+    </div>
+    <div class="nav-menu">
+      <ul>
+        <a href="intro.html">INTRO</a>
+        <a href="watch.html">CLIPS</a>
+        <a href="review.html">REVIEW</a>
+      </ul>
+    </div>
+
+    <div class="grid-container">
+      <div class="left"">
+    <div class=" intro-image">
         <img src="../assets/images/chicago1.JPG" alt="chicago1">
-        <img src="../assets/images/chicago2.JPG" alt="chicago2">          
+        <img src="../assets/images/chicago2.JPG" alt="chicago2">
         <img src="../assets/images/figure7.JPG" alt="chicago1">
         <img src="../assets/images/figure2.JPG" alt="chicago2">
         <img src="../assets/images/figure6.jpg" alt="chicago3">
         <img src="../assets/images/figure7.JPG" alt="chicago0">
         <img src="../assets/images/figure5.JPG" alt="chicago0">
+      </div>
     </div>
-</div>
-  <div class="middle">
-    <section>
+    <div class="middle">
+      <section>
         <h3>SYNOPSIS</h3>
-        <hr >
-        <h5 style="padding-top: 10%;">  Roxie Hart is a small-time chorus dancer who will kill for fame. After doing just that, she lands behind bars alongside vaudeville star Velma Kelly, who, with the help of hotshot lawyer Billy Flynn, has spun her crime into a media frenzy. When Flynn takes Roxie's case, he makes her the latest tabloid sensation, setting the stage for a singing, dancing catfight between the all-too-willing rivals. </h5>
+        <hr>
+        <h5 style="padding-top: 10%;"> Roxie Hart is a small-time chorus dancer who will kill for fame. After doing just
+          that, she lands behind bars alongside vaudeville star Velma Kelly, who, with the help of hotshot lawyer Billy
+          Flynn, has spun her crime into a media frenzy. When Flynn takes Roxie's case, he makes her the latest tabloid
+          sensation, setting the stage for a singing, dancing catfight between the all-too-willing rivals. </h5>
         <h3 style="padding-top: 20%;">AWARDS</h3>
-        <hr >
-    </section>
-</div>  
+        <hr>
+      </section>
+    </div>
 
-  <div class="right">
-    <section>
+    <div class="right">
+      <section>
         <h4>2003 GOLDEN GLOBES</h4>
         <h5 style="font-style: italic; color: #909090; padding: 10px;">Winner</h5>
         <h5>Best Film - Comedy/ Musical</h5>
@@ -185,31 +206,31 @@ img{
         <h5 style="font-style: italic; color: #909090; padding: 10px;">Nominated</h5>
         <h5>Best Actor - Supporting Role</h5>
       </section>
-  </div>
-      <div class="aside">
-        <section>
+    </div>
+    <div class="aside">
+      <section>
         <h4>2003 ACADEMY AWARDS</h4>
-      <h5 style="font-style: italic; color: #909090; padding: 10px;">Winner</h5>
-      <h5>Best Costume Design</h5>
-      <h5>Best Editing</h5>
-      <h5>Best Actress - Supporting Role</h5>
-      <h5>Best Sound, Recording</h5>
-      <h5>Best Art Direction</h5>
-      <h5 style="font-style: italic; color: #909090; padding: 10px;">Nominated</h5>
-      <h5>Best Screenplay - Adaptation</h5>
-      <h5>Best Cinematography</h5>
-      <h5>Best Actor - Supporting Role</h5>
-      <h5>Best Actress - Supporting Role</h5>
-      <h5>Best Actress - Leading Role</h5>
-      <h5>Best Director</h5>
-      <h5>Best Music - Original Song Score</h5>
-    </section>
-   </div>
- 
-</div>
-</div>
-<footer class="main-footer" :class="$mq">
+        <h5 style="font-style: italic; color: #909090; padding: 10px;">Winner</h5>
+        <h5>Best Costume Design</h5>
+        <h5>Best Editing</h5>
+        <h5>Best Actress - Supporting Role</h5>
+        <h5>Best Sound, Recording</h5>
+        <h5>Best Art Direction</h5>
+        <h5 style="font-style: italic; color: #909090; padding: 10px;">Nominated</h5>
+        <h5>Best Screenplay - Adaptation</h5>
+        <h5>Best Cinematography</h5>
+        <h5>Best Actor - Supporting Role</h5>
+        <h5>Best Actress - Supporting Role</h5>
+        <h5>Best Actress - Leading Role</h5>
+        <h5>Best Director</h5>
+        <h5>Best Music - Original Song Score</h5>
+      </section>
+    </div>
+  </div>
+  </div>
+  <footer class="main-footer" :class="$mq">
     <h5 class="copyright">© Chicago</p>
-</footer>
+  </footer>
 </body>
+
 </html>

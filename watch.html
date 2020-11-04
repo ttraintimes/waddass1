@@ -1,68 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicago-watch</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicago-watch</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    .watch-page {
+  .watch-page {
     text-align: center;
     background-image: url('../assets/images/figure2.jpg');
     background-repeat: no-repeat;
     background-size: 1203px;
   }
-  @media screen and (max-width:1280px) { 
-     .watch-page {
+
+  @media screen and (max-width:1280px) {
+    .watch-page {
       margin: 3%;
-     }
+    }
   }
-  @media screen and (max-width:800px) { 
-     .watch-page {
-         background-size: contain;
-     }
-     .video-content {
-       width: 60%;
-    margin: 10%;
-    margin-top: 6%;
+
+  @media screen and (max-width:800px) {
+    .watch-page {
+      background-size: contain;
+    }
+
+    .video-content {
+      width: 60%;
+      margin: 10%;
+      margin-top: 6%;
+    }
   }
-}
+
   .watch-page-content {
     color: #FFF;
     padding-top: 15%;
     padding-bottom: 0px;
   }
-  .watch-page .watch-link{
+
+  .watch-page .watch-link {
     padding-top: 5%;
     padding-bottom: 15%;
   }
+
   .watch-page-content h1 {
     margin: 0;
   }
-  .aside-infro li{
+
+  .aside-infro li {
     position: absolute;
-    margin-left: 5rem;
-    margin-top: 5rem;
+    margin-left: 10rem;
+    margin-top: 3rem;
     list-style: none;
     background: rgb(75, 75, 75);
     text-decoration: none;
-    padding: 0.5rem;
-    width: 6rem;
-    height: 6rem;
+    padding: 0.3rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 90%;
-    z-index: -1;
+    z-index: 10;
   }
-  .aside-infro:hover li{
-    background: rgb(220, 220, 220);
+
+  .aside-infro:hover li {
+    background: rgb(151, 151, 151);
   }
+
+  .aside-infro:hover h4{
+    color: rgb(14, 14, 14);
+  }
+
   .aside-infro a {
-    color: black;
+    line-height: 18px;
     display: block;
   }
-  .watch-page-content p{
+  .watch-page-content p {
     font-size: 50px;
   }
+
   .watch-page a {
     display: inline-block;
     border: 3px solid #FFF;
@@ -71,86 +86,91 @@
     margin-right: 20px;
     text-decoration: none;
   }
-  .watch-page a:hover{
-    background:rgba(199, 199, 199, 0.338);
+
+  .watch-page a:hover {
+    background: rgba(199, 199, 199, 0.338);
   }
+
   .feature-box {
     width: 70%;
     padding-left: 13rem;
     z-index: -2;
   }
+
   .video-content {
     width: 70%;
     margin: 10%;
     margin-top: 6%;
   }
-
 </style>
+
 <body>
-<div class="watch-content">
+  <div class="watch-content">
     <div class="span-all">
-        <h1 class="title" style="text-align: center; "><a href ="home.html">CHICAGO</a></h1>
+      <h1 class="title" style="text-align: center; "><a href="home.html">CHICAGO</a></h1>
     </div>
-    <hr >
+    <hr>
     <div class="side-menu">
-        <a href="watch.html" style="top: 150px;">WATCH NOW</a>
+      <a href="watch.html" style="top: 150px;">WATCH NOW</a>
     </div>
     <div class="side-menu2">
       <a href="review.html" style="top: 190px;">LIKE IT?</a>
-  </div>
-      <div class="nav-menu">
-        <ul>
-            <a href="intro.html">INTRO</a>
-            <a href="watch.html">CLIPS</a>
-            <a href="review.html">REVIEW</a>
-        </ul>
+    </div>
+    <div class="nav-menu">
+      <ul>
+        <a href="intro.html">INTRO</a>
+        <a href="watch.html">CLIPS</a>
+        <a href="review.html">REVIEW</a>
+      </ul>
+    </div>
+    <div class="watch-page">
+      <div class="watch-page-content">
+        <h1 class="watch-page-title">WATCH NOW</h1>
       </div>
-        <div class="watch-page">
-            <div class="watch-page-content">
-                <h1 class="watch-page-title">WATCH NOW</h1>
-            </div>
-            <div class="watch-link">
-              <a href="https://www.amazon.co.uk/Chicago-Catherine-Zeta-Jones/dp/B00ET1HK7C#ace-b3536363283">PRIME</a>
-              <a href="https://play.google.com/store/movies/details/Chicago?id=KoslDxgkdwA&hl=en_US&gl=US">GOOGLE</a>
-            </div>
-        </div>
-        <div class="aside-infro" >
-          <li>
-            <a href="#">
-              <h2 style="padding-top: 0.5rem;">113 MINUTES</h2>
-            </a>
-          </li>
-        </div>
-        <div class="aside-infro" style="padding-top: 8rem; position: absolute;">
-          <li>
-            <a href="#">
-              <h2 style="padding-top: 1rem;">2001</h2>
-            </a>
-          </li>
-        </div>
-        <div class="video-content">
-            <div class="feature-box">
-              <video autoplay controls muted style="width: 90%;">
-                <source
-                    src="../assets/videos/official-trailer .mp4"
-                    type="video/mp4"
-                />
-            </video> 
-            <h4 style="padding-top: 0px; text-align: center;">The official trailer</h3>
-            </div>
-            <div class="feature-box">
-              <video autoplay controls muted style="width: 90%;">
-                <source
-                    src="../assets/videos/tango-video.mp4"
-                    type="video/mp4"
-                />
-            </video>
-            <h4 style="padding-top: 0px; text-align: center;">The cell block tango clip</h3>
-            </div>
-        </div>
-     </div> 
-    <footer class="main-footer" :class="$mq">
-      <h5 class="copyright">© Chicago</p>
-    </footer> 
+      <div class="watch-link">
+        <a href="https://www.amazon.co.uk/Chicago-Catherine-Zeta-Jones/dp/B00ET1HK7C#ace-b3536363283">PRIME</a>
+        <a href="https://play.google.com/store/movies/details/Chicago?id=KoslDxgkdwA&hl=en_US&gl=US">GOOGLE</a>
+      </div>
+    </div>
+    <div class="aside-infro">
+      <li>
+        <a href="#">
+          <h4>113 MINUTES</h4>
+        </a>
+      </li>
+    </div>
+    <div class="aside-infro" style="padding-top: 5rem; position: absolute;">
+      <li>
+        <a href="#">
+          <h4>2001</h4>
+        </a>
+      </li>
+    </div>
+    <div class="aside-infro" style="padding-top: 10rem; position: absolute;">
+      <li>
+        <a href="https://www.imdb.com/title/tt0299658/" target="_blank">
+          <h4>IMDb</h4>
+        </a>
+      </li>
+    </div>
+    <div class="video-content">
+      <div class="feature-box">
+        <video autoplay controls muted style="width: 90%;">
+          <source src="../assets/videos/official-trailer .mp4" type="video/mp4" />
+        </video>
+        <h4 style="padding-top: 0px; text-align: center;">The official trailer</h3>
+      </div>
+      <div class="feature-box">
+        <video autoplay controls muted style="width: 90%;">
+          <source src="../assets/videos/tango-video.mp4" type="video/mp4" />
+        </video>
+        <h4 style="padding-top: 0px; text-align: center;">The cell block tango clip</h3>
+      </div>
+    </div>
+  </div>
+  <footer class="main-footer" :class="$mq">
+    <h5 class="copyright">© Chicago</p>
+  </footer>
 </body>
+
 </html>

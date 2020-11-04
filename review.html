@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
-    h5{
+    h5 {
         font-size: 0.8rem;
     }
-    .review-details{
+
+    .review-details {
         padding-top: 3%;
     }
+
     @media (width: 1280px) {
-        h5{
-        font-size: 1.2rem;
+        h5 {
+            font-size: 1.2rem;
+        }
     }
+
+    input[type=text],
+    select,
+    textarea {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #9f9f9f;
+        color: rgb(16, 16, 16);
+        padding: 12px 22px;
+        margin-left: 40%;
+        margin-top: 1%;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        width: 70%;
+        margin-left: 15%;
+        border-radius: 5px;
+        background-color: #292929;
+        padding: 20px;
+    }
+    
+    textarea#subject{
+            height: 200px;
+    }
+
+    @media (width:1280px) {
+        textarea#subject{
+            height: 370px;
+        }
     }
 </style>
+
 <body>
     <div class="review-content">
         <div class="span-all">
-            <h1 class="title" style="text-align: center;"><a href ="home.html">CHICAGO</a></h1>
+            <h1 class="title" style="text-align: center;"><a href="home.html">CHICAGO</a></h1>
         </div>
-        <hr >
+        <hr>
         <div class="side-menu">
             <a href="watch.html" style="top: 150px;">WATCH NOW</a>
         </div>
@@ -36,39 +87,72 @@
                 <a href="intro.html">INTRO</a>
                 <a href="watch.html">CLIPS</a>
                 <a href="review.html">REVIEW</a>
-              </ul>
-          </div>
-        <!-- 
-        <div class="vl-line"></div>
-        -->
+            </ul>
+        </div>
+        <div class="container">
+            <form action="review.html">
+                <input type="text" placeholder="Your name..">
+                <input type="text" placeholder="Your last name..">
+                <textarea id="subject" name="subject" placeholder="Your review.."></textarea>
+                <div class="label">
+                    <label for="excellent">Excellent</label> 
+                    <input type="radio" name="gender" value="excellent" id="excellent">
+                    <label for="good">Good</label>
+                    <input type="radio" name="gender" value="good" id="good">
+                    <label for="fair">Fair</label>
+                    <input type="radio" name="gender" value="fair" id="fair">
+                    <label for="poor">Poor</label>
+                    <input type="radio" name="gender" value="poor" id="poor">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div class="review-details">
+            <img src="../assets/images/chicago1.JPG" alt="chicago1" style="width: 25%; padding-left: 5%;">
+            <img src="../assets/images/chicago2.JPG" alt="chicago2" style="width: 35%;">
+            <h5 style="width: 60%; margin-left: 15%; padding: 50px;">In effect it is filmed theatre, but this brings its
+                own compensations: the more fake Chicago looks, the more real it seems to get.<br>
+                <p style="color: #8c8c8c;">--Barbara Ellen(Rotten Tomatoes)</p>
+            </h5>
+            <h5 style="width: 60%; margin-left: 15%; padding-left: 50px; padding-bottom: 30px;">Best Picture winner for a jazzy musical about two rival dancers/murderesses competing, all in one dazzling and brassy story about their fight for freedom and fame away from affairs-turned-deadly.<br>
+                <p style="color: #8c8c8c;">--Max G(Rotten Tomatoes)</p>
+            </h5>
+            <hr style="width: 60%; margin-bottom: 1em;">
+        </div>
+        <div class="review-details">
+            <img src="../assets/images/chicago3.jpg" alt="chicago3" style="width: 35%; padding-left: 5%;">
+            <img src="../assets/images/figure7.JPG" alt="chicago1" style="width: 25%;">
+            <h5 style="width: 60%; margin-left: 15%; padding: 50px;">What makes this more than a film of a great stage
+                show is the way that the action spills seamlessly from the stage sets into real life. Magic.<br>
+                <p style="color: #8c8c8c">--James Christopher(Rotten Tomatoes)</p>
+            </h5>
+            <h5 style="width: 60%; margin-left: 15%; padding-left: 50px; padding-bottom: 30px;">
+                Whatever one's qualms about the material, its execution here is rock solid in ways that keep on
+                impressing, right through to the niftiest end credits sequence in years.<br>
+                <p style="color: #8c8c8c;">--Tim Robey(Rotten Tomatoes)</p>
+            </h5>
+            <hr style="width: 60%; margin-bottom: 1em;">
+        </div>
+        <div class="review-details">
+            <img src="../assets/images/figure4.png" alt="chicago3" style="width: 35%; padding-left: 5%;">
+            <img src="../assets/images/figure5.JPG" alt="chicago1" style="width: 25%;">
+            <h5 style="width: 60%; margin-left: 15%; padding: 50px;">
+                ...Chicago is another spectacular spectacular filled with enough razzamattazz, razzle dazzle, all that
+                jazz and then some, all guaranteed to place Hollywood back at the top of the heap as king of the movie
+                musical.<br>
+                <p style="color: #8c8c8c">--Debbie Lynn Elias(Rotten Tomatoes)</p>
+            </h5>
+            <h5 style="width: 60%; margin-left: 15%; padding-left: 50px; padding-bottom: 30px;">
+                This jaw-dropping, mouth-watering, heart-stopping film version of the spectacular Fosse stage show takes
+                all the best bits from the musical and enhances every scene.<br>
+                <p style="color: #8c8c8c;">--Sky Staff(Rotten Tomatoes)</p>
+            </h5>
+            <hr style="width: 60%; margin-bottom: 1em;">
+        </div>
     </div>
-    <div class="review-details">
-        <img src="../assets/images/chicago1.JPG" alt="chicago1" style="width: 25%; padding-left: 5%;">
-        <img src="../assets/images/chicago2.JPG" alt="chicago2" style="width: 35%;">
-        <h5 style="width: 60%; margin-left: 15%; padding: 50px;">In effect it is filmed theatre, but this brings its own compensations: the more fake Chicago looks, the more real it seems to get.<br><p style="color: #8c8c8c;">--Barbara Ellen(Rotten Tomatoes)</p></h5>
-        <hr style="width: 60%; margin-bottom: 1em;">
-    </div>
-    <div class="review-details">
-        <img src="../assets/images/chicago3.jpg" alt="chicago3" style="width: 35%; padding-left: 5%;">
-        <img src="../assets/images/figure7.JPG" alt="chicago1" style="width: 25%;">
-        <h5 style="width: 60%; margin-left: 15%; padding: 50px;">What makes this more than a film of a great stage show is the way that the action spills seamlessly from the stage sets into real life. Magic.<br><p style="color: #8c8c8c">--James Christopher(Rotten Tomatoes)</p></h5>
-        <h5 style="width: 60%; margin-left: 15%; padding-left: 50px; padding-bottom: 30px;">
-            Whatever one's qualms about the material, its execution here is rock solid in ways that keep on impressing, right through to the niftiest end credits sequence in years.<br><p style="color: #8c8c8c;">--Tim Robey(Rotten Tomatoes)</p>
-        </h5>        
-        <hr style="width: 60%; margin-bottom: 1em;">
-     </div>
-     <div class="review-details">
-        <img src="../assets/images/figure4.png" alt="chicago3" style="width: 35%; padding-left: 5%;">
-        <img src="../assets/images/figure5.JPG" alt="chicago1" style="width: 25%;">
-        <h5 style="width: 60%; margin-left: 15%; padding: 50px;">
-            ...Chicago is another spectacular spectacular filled with enough razzamattazz, razzle dazzle, all that jazz and then some, all guaranteed to place Hollywood back at the top of the heap as king of the movie musical.<br><p style="color: #8c8c8c">--Debbie Lynn Elias(Rotten Tomatoes)</p></h5>
-        <h5 style="width: 60%; margin-left: 15%; padding-left: 50px; padding-bottom: 30px;">
-            This jaw-dropping, mouth-watering, heart-stopping film version of the spectacular Fosse stage show takes all the best bits from the musical and enhances every scene.<br><p style="color: #8c8c8c;">--Sky Staff(Rotten Tomatoes)</p>
-        </h5>        
-        <hr style="width: 60%; margin-bottom: 1em;">
-     </div>
     <footer class="main-footer" :class="$mq">
-            <h5 class="copyright">© Chicago</p>
+        <h5 class="copyright">© Chicago</p>
     </footer>
 </body>
+
 </html>
