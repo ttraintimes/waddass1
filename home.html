@@ -6,8 +6,72 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css"
 </head>
-<style>
-    body {
+    <style>
+        body {
+	background-color: #000;
+}
+
+.slide-window {
+	width: 450px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.image-container {
+	width: 1800px;
+	height: 300px;
+	position: relative;
+	transition: left 2s;
+	-webkit-transition: left 2s;
+	-moz-transition: left 2s;
+	-o-transition: left 2s;
+}
+.image-container img{
+width:450px;
+height:270px;
+}
+.slide {
+	float: left;
+	margin: 0;
+	padding-top: 1.5rem;
+}
+
+.button-container {
+	top: -20px;
+	position: relative;
+}
+.button-container a{
+	padding: 0;
+}
+
+.slider-button {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+#slide-1:target ~ .image-container {
+	left: 0;
+}
+
+#slide-2:target ~ .image-container {
+	left: -450px;
+}
+
+#slide-3:target ~ .image-container {
+	left: -900px;
+}
+
+#slide-4:target ~ .image-container {
+	left: -1350px;
+}
+
+body {
 	background: #181818;
 	margin: 0px;
 	padding: 0px;
@@ -16,6 +80,7 @@
     line-height: 1.25;
     width: 100%;
 }
+
 @media screen and (max-width:800px) { 
     .wrapper {
         grid-gap: 3em 5em;
@@ -24,15 +89,47 @@
         padding-top: 8%;
     }
 }
-@media screen and (max-width:1280px) {
+
+@media screen and (width:1280px) {
+    .slide-window {
+        width: 850px;
+        height: 500px;
+    }
+    .image-container {
+        width: 850px;
+        height: 500px;
+    }
+    .image-container img{
+        width: 850px;
+        height: 460px;
+    }
+    #slide-1:target ~ .image-container {
+	left: 0;
+    }
+
+    #slide-2:target ~ .image-container {
+	left: -850px;
+    }
+
+    #slide-3:target ~ .image-container {
+	left: -1700px;
+    }
+
+    #slide-4:target ~ .image-container {
+	left: -2550px;
+    }
+
      .wrapper {
-        grid-gap: 2em 4em;
+        grid-gap: 3em 4em;
+        padding-top: 1.8rem;
     }
 }
+
 .wrapper {
     display: grid;
 	grid-template-columns: repeat(12, 1fr);
     width: 100%;
+    padding-top: 2rem;
 }
 
 .title {
@@ -58,6 +155,7 @@
 }
 .middle-text {
     padding-left: 20px;
+    padding-bottom: 30px;
 	font-size: 12px;
 }
 
@@ -72,7 +170,6 @@
 	padding: 0 10px;
 }
 
-
 .span-all {
     width: 100%;
 	grid-column: span 12;
@@ -80,10 +177,18 @@
 .span-texts {
     font-size: 19px;
 	grid-column:  span 3;
+    padding-top: 0.5rem;
+}
+@media screen and (width:1280px) {
+    .span-texts {
+    font-size: 24px;
+    }
 }
 
 .span-middle {
     padding: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 	grid-column: span 5;
 }
 
@@ -96,7 +201,10 @@
         }
     }
 
-    @media screen and (max-width:1280px) {
+    @media screen and (width:1280px) {
+        .middle-text {
+        font-size: 13px;
+        }
         .span-images {
             grid-column: span 10;
         }
@@ -105,63 +213,71 @@
 .span-threefourths {
 	grid-column: span 9;
 }
-
-
- 
-    img {
-        width: 80%;
-    }
-    p {
-        font-size: 10px;
-    }
-
-</style>
-<body>
-    <div class="wrapper">
-        <div class="span-all">
-			<h1 class="title" style="text-align: center;"><a href ="home.html">CHICAGO</a></h1>
-            <hr >
-            <div class="side-menu">
-                <a href="watch.html" style="top: 150px;">WATCH NOW</a>
+   
+p {
+     font-size: 10px;
+}
+    </style>
+	<body>
+            <div class="span-all">
+                <h1 class="title" style="text-align: center;"><a href ="home.html">CHICAGO</a></h1>
+                <hr >
+                <div class="side-menu">
+                    <a href="watch.html" style="top: 150px;">WATCH NOW</a>
+                </div>
+                <div class="side-menu2">
+                    <a href="review.html" style="top: 190px;">LIKE IT?</a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <a href="intro.html">INTRO</a>
+                        <a href="watch.html">CLIPS</a>
+                        <a href="review.html">REVIEW</a>
+                    </ul>
+                  </div>
             </div>
-            <div class="nav-menu">
-                <ul>
-                    <a href="intro.html">INTRO</a>
-                    <a href="watch.html">CLIPS</a>
-                    <a href="review.html">REVIEW</a>
-                </ul>
-              </div>
+		<div class="slide-window">
+			<span id="slide-1"></span>
+			<span id="slide-2"></span>
+			<span id="slide-3"></span>
+			<span id="slide-4"></span>
+			<div class="image-container">
+				<img src="../assets/images/chicago4.JPG" class="slide" >
+				<img src="../assets/images/figure5.JPG" class="slide" >
+				<img src="../assets/images/chicago2.JPG" class="slide" >
+				<img src="../assets/images/figure2.JPG" class="slide" >
+			</div>
+			<div class="button-container">
+				<a href="#slide-1" class="slider-button"></a>
+				<a href="#slide-2" class="slider-button"></a>
+				<a href="#slide-3" class="slider-button"></a>
+				<a href="#slide-4" class="slider-button"></a>
+			</div>
         </div>
-        
-        <div class="span-images">
-            <img src="../assets/images/chicago4.JPG" style="padding-left: 25%;">
-            <h5 class="home-text" style="padding-top: 6px; padding-left: 200px;">"If you have been it, it you have seen it, I betch you will do the same."</p>
+        <div class="wrapper">
+            <div class="span-middle">
+                <h5 class="middle-text">Chicago, American musical film, released in 2002, that was based on Bob Fosse’s 1975 Broadway play, with songs by John Kander and Fred Ebb. </p>
             </div>
-        <div class="span-middle">
-            <h5 class="middle-text">Chicago, American musical film, released in 2002, that was based on Bob Fosse’s 1975 Broadway play, with songs by John Kander and Fred Ebb. </p>
+            <div class="span-middle">
+                <h5 class="middle-text">The movie, directed and choreographed by Rob Marshall, was a popular and critical success, winning six Academy Awards, including best picture.</p>
+            </div>
+            <div class="span-middle">
+                <img src="../assets/images/chicago4.JPG" width="80%">
+            </div>
+            <div class="span-texts home-text">
+                <h5><span class="font-cap">DIRECTOR</span><br> Rob Marshall</p>
+                <h5><span class="font-cap">WRITERS</span><br> Bill Condon<br> Bob Fosse<br> Fred Ebb<br>Maurine Dallas Watkins</p>
+                <h5><span class="font-cap">Music</span><br> John Kander</p>
+                <h5><span class="font-cap">Cinematography</span><br> Dion Beebe</p>
+                <h5><span class="font-cap">PRODUCER</span><br> Martin Richards</p>
+            </div>
+            <div class="home-text line-set span-texts">
+                <h5><span class="font-cap">Studios</span><br> Miramax<br>Producers Circle<br> reviewline Entertainment<br> Kalis Productions GmbH & Co. KG</p>
+                <h5><span class="font-cap">STARRING</span><br> Catherine Zeta-Jones<br>John C. Reilly<br>Lucy Liu<br>Queen Latifah<br>Renee Zellweger<br>Richard Gere</p>
+            </div>
         </div>
-        <div class="span-middle">
-            <h5 class="middle-text">The movie, directed and choreographed by Rob Marshall, was a popular and critical success, winning six Academy Awards, including best picture.</p>
-        </div>
-        <div class="span-middle">
-            <img src="../assets/images/chicago4.JPG">
-        </div>
-        <div class="span-texts home-text">
-            <h5><span class="font-cap">DIRECTOR</span><br> Rob Marshall</p>
-            <h5><span class="font-cap">WRITERS</span><br> Bill Condon<br> Bob Fosse<br> Fred Ebb<br>Maurine Dallas Watkins</p>
-            <h5><span class="font-cap">Music</span><br> John Kander</p>
-            <h5><span class="font-cap">Cinematography</span><br> Dion Beebe</p>
-            <h5><span class="font-cap">PRODUCER</span><br> Martin Richards</p>
-
-
-        </div>
-        <div class="home-text line-set span-texts">
-            <h5><span class="font-cap">Studios</span><br> Miramax<br>Producers Circle<br> reviewline Entertainment<br> Kalis Productions GmbH & Co. KG</p>
-            <h5><span class="font-cap">STARRING</span><br> Catherine Zeta-Jones<br>John C. Reilly<br>Lucy Liu<br>Queen Latifah<br>Renee Zellweger<br>Richard Gere</p>
-        </div>
-    </div>
-    <footer class="main-footer" :class="$mq">
-        <h5 class="copyright">© Chicago</p>
-    </footer>
-</body>
+        <footer class="main-footer" :class="$mq">
+            <h5 class="copyright">© Chicago</p>
+        </footer>
+	</body>
 </html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<style>
+    body {
+	background: #181818;
+	margin: 0px;
+	padding: 0px;
+	color: #fff;
+	font-size: 14px;
+    line-height: 1.25;
+    width: 100%;
+}
+@media screen and (max-width:800px) { 
+    .wrapper {
+        grid-gap: 3em 5em;
+    }
+    .main-footer h5{
+        padding-top: 8%;
+    }
+}
+@media screen and (max-width:1280px) {
+     .wrapper {
+        grid-gap: 2em 4em;
+    }
+}
+.wrapper {
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+}
+
+.title {
+	font-size: 5.5em;
+	line-height: 100%;
+	margin: 10px;
+}
+
+.home-text {
+    text-align: center;
+	font-size: 1.15em;
+	line-height: 1.25;
+}
+
+.accent {
+	font-size: 1.5em;
+	line-height: 200%;
+	margin: 30px 20px;
+}
+
+.font-cap {
+	text-transform: uppercase;
+}
+.middle-text {
+    padding-left: 20px;
+	font-size: 12px;
+}
+
+.line-btm {
+	border-bottom: 1px solid #fff;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.line-set {
+	border-left: 1px solid #fff;
+	padding: 0 10px;
+}
+
+
+.span-all {
+    width: 100%;
+	grid-column: span 12;
+}
+.span-texts {
+    font-size: 19px;
+	grid-column:  span 3;
+}
+
+.span-middle {
+    padding: 20px;
+	grid-column: span 5;
+}
+
+.span-images {
+    grid-column: span 9;
+}
+    @media screen and (max-width:800px) {
+        .span-images {
+            grid-column: span 10;
+        }
+    }
+
+    @media screen and (max-width:1280px) {
+        .span-images {
+            grid-column: span 10;
+        }
+}
+
+.span-threefourths {
+	grid-column: span 9;
+}
+
+
+ 
+    img {
+        width: 80%;
+    }
+    p {
+        font-size: 10px;
+    }
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="span-all">
+			<h1 class="title" style="text-align: center;"><a href ="home.html">CHICAGO</a></h1>
+            <hr >
+            <div class="side-menu">
+                <a href="watch.html" style="top: 150px;">WATCH NOW</a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <a href="intro.html">INTRO</a>
+                    <a href="watch.html">CLIPS</a>
+                    <a href="review.html">REVIEW</a>
+                </ul>
+              </div>
+        </div>
+        
+        <div class="span-images">
+            <img src="../assets/images/chicago4.JPG" style="padding-left: 25%;">
+            <h5 class="home-text" style="padding-top: 6px; padding-left: 200px;">"If you have been it, it you have seen it, I betch you will do the same."</p>
+            </div>
+        <div class="span-middle">
+            <h5 class="middle-text">Chicago, American musical film, released in 2002, that was based on Bob Fosse’s 1975 Broadway play, with songs by John Kander and Fred Ebb. </p>
+        </div>
+        <div class="span-middle">
+            <h5 class="middle-text">The movie, directed and choreographed by Rob Marshall, was a popular and critical success, winning six Academy Awards, including best picture.</p>
+        </div>
+        <div class="span-middle">
+            <img src="../assets/images/chicago4.JPG">
+        </div>
+        <div class="span-texts home-text">
+            <h5><span class="font-cap">DIRECTOR</span><br> Rob Marshall</p>
+            <h5><span class="font-cap">WRITERS</span><br> Bill Condon<br> Bob Fosse<br> Fred Ebb<br>Maurine Dallas Watkins</p>
+            <h5><span class="font-cap">Music</span><br> John Kander</p>
+            <h5><span class="font-cap">Cinematography</span><br> Dion Beebe</p>
+            <h5><span class="font-cap">PRODUCER</span><br> Martin Richards</p>
+
+
+        </div>
+        <div class="home-text line-set span-texts">
+            <h5><span class="font-cap">Studios</span><br> Miramax<br>Producers Circle<br> reviewline Entertainment<br> Kalis Productions GmbH & Co. KG</p>
+            <h5><span class="font-cap">STARRING</span><br> Catherine Zeta-Jones<br>John C. Reilly<br>Lucy Liu<br>Queen Latifah<br>Renee Zellweger<br>Richard Gere</p>
+        </div>
+    </div>
+    <footer class="main-footer" :class="$mq">
+        <h5 class="copyright">© Chicago</p>
+    </footer>
+</body>
+</html>

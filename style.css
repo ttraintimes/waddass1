@@ -102,6 +102,7 @@ h5:hover, h5:focus, h5:active{
     .side-menu {
         position: fixed;
         min-width: 150px;
+        z-index: 999;
     }
     .side-menu a{
        text-align: left;
@@ -110,8 +111,27 @@ h5:hover, h5:focus, h5:active{
        color: rgb(0, 0, 0);
        padding: 10px 30px;
     }
+    .side-menu:hover {
+        z-index: 99999;
+    }
     .side-menu a:hover {
-        background: #2e2e2e;
+        background: #393939;
+        color: rgb(255, 255, 255);
+    }
+    .side-menu2 {
+        position: fixed;
+        min-width: 120px;
+        z-index: 9999;
+    }
+    .side-menu2 a{
+       text-align: left;
+       display: block;
+       background: rgb(116, 116, 116);
+       color: #242424;
+       padding: 10px 30px;
+    }
+    .side-menu2 a:hover {
+        background: #2d2d2d;
         color: rgb(255, 255, 255);
     }
     .title {
